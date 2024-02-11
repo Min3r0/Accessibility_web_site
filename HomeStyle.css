@@ -15,7 +15,8 @@ body
     background: #000;
 }
 
-header {
+header
+{
     background: #000;
     color: #fff;
     position: fixed; /* Le header sera fixé en haut de la page */
@@ -138,32 +139,10 @@ article {
     -webkit-line-clamp: 4; /* Limiter le texte à 3 lignes */
     -webkit-box-orient: vertical;
     overflow: hidden;
+    max-width: calc(80% - 20px); /* Taille maximale pour le texte */
+    word-wrap: break-word;
 }
 
-    .article-text-container {
-        max-width: calc(80% - 20px); /* Taille maximale pour le texte */
-        word-wrap: break-word; /* Permettre le retour à la ligne lorsque le texte dépasse */
-    }
-
-    .article-picture-container {
-        width: 20%; /* Taille de l'image */
-    }
-
-    article img {
-        max-width: 100%; /* Image ne dépasse pas de son conteneur */
-        border-radius: 10px; /* Bords arrondis pour l'image */
-        margin-bottom: 10px; /* Espacement en bas de l'image */
-    }
-
-    article h3 {
-        margin: 0 0 10px; /* Espacement en bas du titre */
-    }
-
-    article p {
-        margin-bottom: 10px; /* Espacement en bas du paragraphe */
-    }
-
-}
 
 .article-picture-container {
     width: 20%; /* Taille de l'image */
@@ -179,10 +158,23 @@ article h3 {
     margin: 0 0 10px; /* Espacement en bas du titre */
 }
 
-article p {
-    margin-bottom: 10px; /* Espacement en bas du paragraphe */
+.article-p{
+    margin-bottom: 2vw;
 }
 
+.article-picture-container {
+    width: 20%; /* Taille de l'image */
+}
+
+article img {
+    max-width: 100%; /* Image ne dépasse pas de son conteneur */
+    border-radius: 10px; /* Bords arrondis pour l'image */
+    margin-bottom: 10px; /* Espacement en bas de l'image */
+}
+
+article h3 {
+    margin: 0 0 10px; /* Espacement en bas du titre */
+}
 
 article a {
     display: inline-block;
