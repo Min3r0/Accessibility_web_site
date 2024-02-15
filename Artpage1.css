@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+header
+{
+    background: #000;
+    color: #fff;
+    position: fixed; /* Le header sera fixé en haut de la page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Assure que le header est au-dessus de tout le contenu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    border-radius: 50%; /* Pour rendre le logo rond */
+    width: 50px; /* Ajustez la taille du logo selon vos besoins */
+    height: 50px;
+    margin-right: 10px; /* Espacement entre le logo et le h2 */
+}
+
+h2 {
+    margin: 0; /* Supprimer les marges par défaut */
+}
+.disconnect-button {
+    background-color: #1fe0ff; /* Couleur de fond du bouton */
+    color: #000; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne du bouton */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition en douceur pour un meilleur effet visuel */
+    margin-right: 2vw;
+}
+
+.disconnect-button:hover {
+    background-color: #0eb2d4; /* Changement de couleur au survol */
+}
+
+main
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+main::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#000000, #9a31c4, #732a2a);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+    100%
+    {
+        transform: translateY(100%);
+    }
+}
+main span
+{
+    position: relative;
+    display: block;
+    width: calc(6.25vw - 2px);
+    height: calc(6.25vw - 2px);
+    background: #181818;
+    z-index: 2;
+    transition: 1.5s;
+}
+main span:hover
+{
+    background: rgba(255, 0, 128, 0.25);
+    transition: 0s;
+}
+
+
+
+
+
+
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
