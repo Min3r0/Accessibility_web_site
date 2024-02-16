@@ -36,28 +36,28 @@ header
 }
 
 .logo-container img {
-    border-radius: 50%; /* Pour rendre le logo rond */
-    width: 50px; /* Ajustez la taille du logo selon vos besoins */
+    border-radius: 50%;
+    width: 50px;
     height: 50px;
-    margin-right: 10px; /* Espacement entre le logo et le h2 */
+    margin-right: 10px;
 }
 
 h2 {
-    margin: 0; /* Supprimer les marges par défaut */
+    margin: 0;
 }
 .disconnect-button {
-    background-color: #1fe0ff; /* Couleur de fond du bouton */
-    color: #000; /* Couleur du texte */
-    padding: 10px 20px; /* Espacement interne du bouton */
+    background-color: #1fe0ff;
+    color: #000;
+    padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transition en douceur pour un meilleur effet visuel */
+    transition: background-color 0.3s ease;
     margin-right: 2vw;
 }
 
 .disconnect-button:hover {
-    background-color: #0eb2d4; /* Changement de couleur au survol */
+    background-color: #0eb2d4;
 }
 
 
@@ -109,11 +109,15 @@ main span:hover
     transition: 0s;
 }
 
+
+
+
+
 main .article-container{
-    position: absolute; /* Changement de position à relative */
-    z-index: 1000; /* Vous pouvez conserver cet attribut si nécessaire */
+    position: absolute;
+    z-index: 1000;
     width: 100vw;
-    overflow-y: auto; /* Ajout de la propriété pour activer le défilement vertical */
+    overflow-y: auto;
     max-height: calc(80vh - 20px);
 }
 
@@ -154,7 +158,7 @@ article img {
     margin-bottom: 10px; /* Espacement en bas de l'image */
 }
 
-article h3 {
+article h1 {
     margin: 0 0 10px; /* Espacement en bas du titre */
 }
 
@@ -164,16 +168,6 @@ article h3 {
 
 .article-picture-container {
     width: 20%; /* Taille de l'image */
-}
-
-article img {
-    max-width: 100%; /* Image ne dépasse pas de son conteneur */
-    border-radius: 10px; /* Bords arrondis pour l'image */
-    margin-bottom: 10px; /* Espacement en bas de l'image */
-}
-
-article h3 {
-    margin: 0 0 10px; /* Espacement en bas du titre */
 }
 
 article a {
