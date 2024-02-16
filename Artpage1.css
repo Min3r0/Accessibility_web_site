@@ -36,15 +36,17 @@ header
 }
 
 .logo-container img {
-    border-radius: 50%; /* Pour rendre le logo rond */
-    width: 50px; /* Ajustez la taille du logo selon vos besoins */
+    border-radius: 50%;
+    width: 50px;
     height: 50px;
-    margin-right: 10px; /* Espacement entre le logo et le h2 */
+    margin-right: 10px;
+
 }
 
 h2 {
     margin: 0; /* Supprimer les marges par défaut */
 }
+
 .disconnect-button {
     background-color: #1fe0ff; /* Couleur de fond du bouton */
     color: #000; /* Couleur du texte */
@@ -113,7 +115,7 @@ main span:hover
 
 
 main .article-table-container{
-    margin-top: 5vh;
+
     position: absolute;
     z-index: 1000;
     width: 80vw;
@@ -121,12 +123,15 @@ main .article-table-container{
     max-height: calc(75vh - 20px);
     background-color: #fff; /* Fond blanc */
     border-radius: 5%  ;
+    padding-bottom: 1vh;
+    padding-top: 2vh;
 }
 
 h1
 {
     display: flex;
     justify-content: center;
+    margin-bottom: 1vh;
 }
 
 p
