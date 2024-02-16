@@ -184,6 +184,7 @@ article a:hover {
     background-color: #0eb2d4;
 }
 
+/*-------------------------------------------<Footer>-------------------------------------------*/
 
 footer {
     background: #222;
@@ -199,4 +200,46 @@ footer {
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info {
+    margin-left: 20px;
+    position: relative;
+}
+
+.contact-info img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.contact-info .phone,
+.contact-info .email {
+    position: absolute;
+    left: calc(100% + 10px); /* ajustement de l'espace entre l'image et le texte */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000000;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    white-space: nowrap; /* empêche le découpage du texte sur plusieurs lignes */
+    z-index: 10002;
+}
+
+.contact-info:hover .phone,
+.contact-info:hover .email {
+    display: block;
+}
+
+.contact-info img:focus + .phone,
+.contact-info img:focus + .email {
+    display: block;
 }
